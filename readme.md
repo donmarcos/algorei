@@ -17,7 +17,7 @@ hecha de antemano usando un Node server con express que lo usamos como un proxy 
 [ESPAÑOL](https://www.youtube.com/watc)
 ## Documentation
 
-Documentacion en [ESPAÑOL](doc/es/README.md)
+Documentacion en [ESPAÑOL](docs/README.md)
 
 ## Installation (Usando Agorand Sandbox en Windows 10 )
 
@@ -56,7 +56,7 @@ node.js, npm, docker, Ionic, Vue.js.
 Crea las cuentas, wallets y ASA NFTs siguiendo las instrucciones en el doc que sigue
 asumo que tu sanbox en docker ya esta inicializada 
 
-    AlgoREI_iniciar.sh
+    doc/AlgoREI_iniciar.sh
 
 ## Other helpful environment setup
 
@@ -67,7 +67,4 @@ asumo que tu sanbox en docker ya esta inicializada
 * Install Algorand JavaScript SDK: https://github.com/algorand/js-algorand-sdk
 
 
-## Learn Algorand smart contracts
 
-* PyTeal: https://developer.algorand.org/docs/get-started/dapps/pyteal/
-* Sample PyTeal DApp: https://github.com/algorand/auction-demo
