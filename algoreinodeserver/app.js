@@ -6,6 +6,9 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+var cors = require('cors')
+app.use(cors())
+
 const transactions = require('./routes/transactions')
 const assets = require('./routes/assets')
 const accounts = require('./routes/accounts')

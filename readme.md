@@ -1,65 +1,66 @@
-## Ionic Vue Mobile Template 08 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b07cd159-d6b6-4508-8811-7dccf3af1dbc/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-08/deploys)
+# AlgoREI Fracionando NFT en Real ESTATE 
 
-Hybrid mobile template built with Ionic Vue using capacitor for native builds.
+AlgoREI Fracionando NFT en Real ESTATE  con esta propuesta estamos tratando de "democratizar" aun mas el concepto de NFT/ASA para permitir que todos 
+los/las personas sepan accesar, crear tokens y tomar ventaja de esta nueva tecnologia y que no solo sea parte exclusiva de grandes entes corporativos 
+fuera del alcance del poder acquisitivo o de entrada de personas que teniendo la iniciativa pero no el capital quieren invertir
 
-[Demo](https://ionic-vue-mobile-template-08.netlify.app)
+El back end estamos usando el sandbox (como en un nodo privado) y cada ASA es creado cada ves que los usuarios lo crean atravez de nuesto AlgoREI dashboard 
+y de ahi atravez de nuestras basicas wallets es donde el peer to peer (con transactiones atomicas) comienza en transferir los assets basados en contratos 
+directos entre los participantes 
 
-## Project setup
-```
-npm install
-```
+Nuestros dos front ends (dash board en Vue y la wallet basica en ionic) pueden ser activadas localmente y como demostracion estamos usando informacion ya 
+hecha de antemano usando un Node server con express que lo usamos como un proxy para communicarnos con el Algorand JavaScript SDK 
 
-### Run on the browser - development
-```
-npm run serve
-```
 
-## Design
-![alt text](/design.png "Logo Title Text 1")
 
-## Native
+## Demo videos: 
+[ESPAÑOL](https://www.youtube.com/watc)
+## Documentation
 
-Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native builds
+Documentacion en [ESPAÑOL](doc/es/README.md)
 
-## Prepare native builds
+## Installation (Usando Agorand Sandbox en Windows 10 )
 
-### iOS testing and distribution
-1. Download the latest Xcode
-2. `npm run build`
-3. `npx cap add ios`
-3. `npx cap copy`
-4. `npx cap open ios` Xcode takes a few seconds to index the files; keep an eye at the top of Xcode's window for progress.
+Before installing asegurate que los siguiente este instalado en tu computadora 
+node.js, npm, docker, Ionic, Vue.js.
 
-[Not compulsory] For sanity check click on the play button in the top left. This will prepare and run the app in a simulator, if all goes well you should be able to run the app and click around. If not, create an issue 🤷 and I will have a look.
+1. Clone this repository
+2. Asegurate que tengas Algorand sandbox listo en Docker
 
-### Android testing and distribution
-1. Download the latest Android Studio
-2. `npm run build`
-3. `npx cap add android`
-3. `npx cap copy`
-4. `npx cap open android` Android Studio takes a few seconds to index the files, keep an eye at the bottom of Android Studio for progress.
-5. Testing - When indexing is complete, look for a green play button. Click the play button and it will launch the app in an emulator ([See here to setup Emulator](https://developer.android.com/studio/run/managing-avds)) or on the phone, if a phone is connected via USB.
+4. Install the front end:
+    For testing:
 
-## Official Docs
-- [Getting started](https://ionicframework.com/vue)
+        $ cd webapp
 
-## Resources
-- [Newsletter](https://mailchi.mp/b9133e120ccf/sqan8ggx22) - Signup to my Ionic Vue newsletter to get templates and other Ionic Vue updates in your inbox!
-- [YouTube Channel](https://www.youtube.com/channel/UC5jZ6srZuLwt3O3ZtuM1Dsg) - Subscribe to my YouTube channel.
-- [Ionic Vue Tempalates](https://tinyurl.com/y2gl39dk) - Free Ionic Vue Templates.
-- [Ionic Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=dlodeprojuicer.ionicvuesnippets) - This extension adds ionic-vue snippets. Quickly add ionic-vue component code by simply typing iv. The iv prefix will show a range of snippets to choose from.
+        $ npm install
 
-## Affiliates
-I want to keep doing these templates for free for as long as possible. I have joined a few affiliate programs to help take care of the costs. 
-- [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High-quality illustrations that will help you build breath-taking websites.
-- [Getrewardful](https://www.getrewardful.com/?via=simo) - Create your own affiliate program.
+        $ npm start
 
-Alternatively, you can buy me a coffee <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
+    For production (it only uses Algorand testnet)
 
-## Credits
-- [Stella Muloongo Mwanahamuntu](https://twitter.com/mwanahamuntu_) - Design
-- [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
+        $ cd webapp
 
-## Contact
-- [@dlodeprojuicer](https://twitter.com/dlodeprojuicer) on Twitter
+        $ npm install
+
+        $ npm run build
+
+        Then copy and pin the contents of the webapp/build directory to IPFS. 
+
+Crea las cuentas, wallets y ASA NFTs siguiendo las instrucciones en el doc que sigue
+asumo que tu sanbox en docker ya esta inicializada 
+
+    AlgoREI_iniciar.sh
+
+## Other helpful environment setup
+
+* Install sandbox: https://github.com/algorand/sandbox
+
+* Install Visual Studio Code extension: algorand
+
+* Install Algorand JavaScript SDK: https://github.com/algorand/js-algorand-sdk
+
+
+## Learn Algorand smart contracts
+
+* PyTeal: https://developer.algorand.org/docs/get-started/dapps/pyteal/
+* Sample PyTeal DApp: https://github.com/algorand/auction-demo

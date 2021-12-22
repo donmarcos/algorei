@@ -36,4 +36,13 @@ router.get("/:name", async function (req, res) {
   res.send(assets);
 });
 
+
+router.post("/create", async function (req, res) {
+  // const assetSearchName = req.params.name;
+  console.log("Create Asset now");
+  console.log(req.body);
+    
+  res.json(JSON.stringify({success: "Ok 200"}));
+});
+
 module.exports = router;
