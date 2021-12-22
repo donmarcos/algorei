@@ -16,9 +16,7 @@ hecha de antemano usando un Node server con express que lo usamos como un proxy 
 ## Demo videos: 
 [ESPAÑOL](https://www.youtube.com/watc)
 
-## Documentation
 
-Documentacion en [ESPAÑOL](docs/README.md)
 
 ## Installation (Usando Agorand Sandbox en Windows 10 )
 
