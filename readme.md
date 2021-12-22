@@ -27,24 +27,31 @@ node.js, npm, docker, Ionic, Vue.js.
 1. Clone this repository
 2. Asegurate que tengas Algorand sandbox listo en Docker
 
-4. Install the front end:
-    For testing:
+4. Install the front end Ionic y Vue
+    Para usar el basic wallet 
+     
+        $ cd algoreiwalletionic
 
-        $ cd webapp
+        $ npm install
+
+        $ ionic serve
+    
+	Para usar el AlgoREI dashboard y crear ASA/NFT's
+	
+	    $ cd algoreimktvue
+
+        $ npm install
+
+        $ npm run serve
+    
+	Para comenzar nuestro Node/Express Algo proxy  
+	    
+		$ cd algoreinodeserver
 
         $ npm install
 
         $ npm start
-
-    For production (it only uses Algorand testnet)
-
-        $ cd webapp
-
-        $ npm install
-
-        $ npm run build
-
-        Then copy and pin the contents of the webapp/build directory to IPFS. 
+	
 
 Crea las cuentas, wallets y ASA NFTs siguiendo las instrucciones en el doc que sigue
 asumo que tu sanbox en docker ya esta inicializada 
