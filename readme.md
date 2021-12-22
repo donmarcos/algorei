@@ -15,6 +15,7 @@ hecha de antemano usando un Node server con express que lo usamos como un proxy 
 
 ## Demo videos: 
 [ESPAÑOL](https://www.youtube.com/watc)
+
 ## Documentation
 
 Documentacion en [ESPAÑOL](docs/README.md)
@@ -56,7 +57,7 @@ node.js, npm, docker, Ionic, Vue.js.
 Crea las cuentas, wallets y ASA NFTs siguiendo las instrucciones en el doc que sigue
 asumo que tu sanbox en docker ya esta inicializada 
 
-    doc/AlgoREI_iniciar.sh
+    Documentacion [Iniciar](docs/AlgoREI_iniciar.sh)
 
 ## Other helpful environment setup
 
