@@ -65,5 +65,7 @@ asumo que tu sanbox en docker ya esta inicializada
 
 * Install Algorand JavaScript SDK: https://github.com/algorand/js-algorand-sdk
 
+* Basics of Algorand Standard Asset with JavaScript 
+  SDKhttps://blockgeni.com/basics-of-algorand-standard-asset-with-javascript-sdk/
 
 

@@ -61,6 +61,7 @@ router.get("/:address", async function(req, res) {
             asset.name = assetDetail.asset.params.name || ''
             asset['unit-name'] = assetDetail.asset.params['unit-name'] || ''
             asset.url = assetDetail.asset.params.url
+			console.log("asset", asset);
             return asset
         })
     }

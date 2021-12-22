@@ -36,101 +36,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1><span class="colored">Crea tu token </span> Algo ASA</h1>
+            <h1><span class="colored">Listado NFT's </span> Algo ASA</h1>
           </div>
         </div>
       </div>
     </div>
     <p></p>
     <p></p>
+
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <h3>ASA Informacion.</h3>
           <ul class="contact-info"></ul>
         </div>
+
         <div
           class="col-md-8 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0"
         >
-          <div class="row">
+          <div class="row" v-for="(ast, index) in assets" :key="index">
             <div class="col-md-6">
               <div class="form-group">
-                Unit Name (Max 8)
-                <input
-                  class="form-control"
-                  placeholder="Name"
-                  type="text"
-                  v-model="post.uname"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                Name
-                <input
-                  class="form-control"
-                  placeholder="name"
-                  type="text"
-                  v-model="post.name"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                Total tokens
-                <input
-                  class="form-control"
-                  placeholder="total"
-                  type="text"
-                  v-model="post.total"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                Decimals
-                <input
-                  class="form-control"
-                  placeholder="decimal"
-                  type="text"
-                  v-model="post.dec"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                URL
-                <input
-                  class="form-control"
-                  placeholder="url"
-                  type="text"
-                  v-model="post.url"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                Creator (hex ID)
-                <input
-                  class="form-control"
-                  placeholder="creator"
-                  type="text"
-                  v-model="post.creator"
-                />
+                ASA ID : {{ ast.id }}
+                <p></p>
+                ASA Name: {{ ast.name }}
+                <p></p>
+                ASA Unit Name: {{ ast['unit-name'] }} 
+                <p></p>
+                ASA Amount: {{ ast.amount }}
+                <p></p>
               </div>
             </div>
           </div>
@@ -226,29 +160,27 @@ export default {
     return {
       post: {},
       data: {},
+      assets: [],
     };
   },
-  methods: {
-    async createPost() {
-      alert(JSON.stringify(this.post));
-
-      const formDataJsonString = JSON.stringify(this.post);
-      const Url = "http://localhost:3000/assets/create";
-      const fetchOptions = {
-        method: "POST",
-        cache: "default",
-        body: formDataJsonString,
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
-      };
-      const res = await fetch(Url, fetchOptions);
-      const data = await res.json();
-      this.data = data;
-      // go to listings 
-      this.$router.push('ASAList') ;
-    },
+  async created() {
+    // GET request using fetch with async/await
+    let urlParams =
+      "LQF2KGUQE5PWXGZIXEJVWMPDTKC6LG4F2L3FBZPNZNODXRRXQYCDJ5INUE?extended";
+    let url = "http://localhost:3000/accounts/" + urlParams;
+    const fetchOptions = {
+      method: "GET",
+      cache: "default",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    };
+    const response = await fetch(url, fetchOptions);
+    const data = await response.json();
+    this.assets = data.assets;
+    console.log(this.assets);
   },
+  methods: {},
 };
 </script>
