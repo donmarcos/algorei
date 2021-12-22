@@ -18,7 +18,7 @@ hecha de antemano usando un Node server con express que lo usamos como un proxy 
 
 
 
-## Installation (Usando Agorand Sandbox en Windows 10 )
+## Installation (Usando Algorand Sandbox en Windows 10 )
 
 Before installing asegurate que los siguiente este instalado en tu computadora 
 node.js, npm, docker, Ionic, Vue.js.
