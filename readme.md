@@ -1,3 +1,13 @@
+
+
+<details>
+  <summary>ALGORei Real Estate Inversiones </summary><details>
+  <img src="https://user-images.githubusercontent.com/212162/147300807-85635bb5-fbd5-4cc6-bff1-fb61b3b34b68.png" name="image-name1">
+  <img src="https://user-images.githubusercontent.com/212162/147300952-657b6fe4-5790-4633-8382-829c07db44de.png" name="image-name2">
+  <img src="https://user-images.githubusercontent.com/212162/147301002-dd668ad8-63ce-4e59-bc7f-f2d51847a076.png" name="image-name3">
+</details>
+
+
 # AlgoREI Fracionando NFT en Real ESTATE 
 
 AlgoREI Fracionando NFT en Real ESTATE  con esta propuesta estamos tratando de "democratizar" aun mas el concepto de NFT/ASA para permitir que todos 
