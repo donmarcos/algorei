@@ -1,5 +1,6 @@
-## Ionic Vue Mobile Template 08 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b07cd159-d6b6-4508-8811-7dccf3af1dbc/deploy-status)](https://app.netlify.com/sites/ionic-vue-mobile-template-08/deploys)
+## AlgoREI Mobile wallet Ionic Vue  
+
+<img src="https://user-images.githubusercontent.com/212162/147300952-657b6fe4-5790-4633-8382-829c07db44de.png" name="image-name2">
 
 Hybrid mobile template built with Ionic Vue using capacitor for native builds.
 
@@ -44,22 +45,3 @@ Using [Capacitor](https://capacitorjs.com/docs/getting-started) for native build
 ## Official Docs
 - [Getting started](https://ionicframework.com/vue)
 
-## Resources
-- [Newsletter](https://mailchi.mp/b9133e120ccf/sqan8ggx22) - Signup to my Ionic Vue newsletter to get templates and other Ionic Vue updates in your inbox!
-- [YouTube Channel](https://www.youtube.com/channel/UC5jZ6srZuLwt3O3ZtuM1Dsg) - Subscribe to my YouTube channel.
-- [Ionic Vue Tempalates](https://tinyurl.com/y2gl39dk) - Free Ionic Vue Templates.
-- [Ionic Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=dlodeprojuicer.ionicvuesnippets) - This extension adds ionic-vue snippets. Quickly add ionic-vue component code by simply typing iv. The iv prefix will show a range of snippets to choose from.
-
-## Affiliates
-I want to keep doing these templates for free for as long as possible. I have joined a few affiliate programs to help take care of the costs. 
-- [Pixeltrue](https://www.pixeltrue.com/?via=simo) - High-quality illustrations that will help you build breath-taking websites.
-- [Getrewardful](https://www.getrewardful.com/?via=simo) - Create your own affiliate program.
-
-Alternatively, you can buy me a coffee <a href="https://www.buymeacoffee.com/simomafuxwana" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="120px" height="30px" style="height: 30px !important;width: 120px !important;" ></a>
-
-## Credits
-- [Stella Muloongo Mwanahamuntu](https://twitter.com/mwanahamuntu_) - Design
-- [おかきょー](https://twitter.com/31415O_Kyo) - [Japanese doc translation](https://github.com/dlodeprojuicer/ionic-vue-mobile-template-01/blob/master/readme-ja.md)
-
-## Contact
-- [@dlodeprojuicer](https://twitter.com/dlodeprojuicer) on Twitter
